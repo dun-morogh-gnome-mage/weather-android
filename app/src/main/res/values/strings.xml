@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Weather_App">WeatherApp</string>
+    <string name="search_btn">search</string>
+    <string name="fetching">Fetching Weather</string>
+
+    <string name="humidity">Humidity</string>
+    <string name="windSpeed">Wind Speed</string>
+    <string name="visibility">Visibility</string>
+    <string name="pressure">Pressure</string>
+    <string name="precipitation">Precipitation</string>
+    <string name="temperature">Temperature</string>
+    <string name="cloudCover">Cloud Cover</string>
+    <string name="ozne">Ozone</string>
+    <string name="tweet">Tweet</string>
+    <string name="hint">Search...</string>
+    <string name="result">Search Result</string>
+    <string name="TemperatureRange">Temperature Range</string>
+    <string name="WeatherData">Weather Data</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

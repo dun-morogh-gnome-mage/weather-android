@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appBackground">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/cardBackground"
+        android:layout_gravity="center"
+        app:columnCount="3"
+        app:rowCount="3">
+
+        <RelativeLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            >
+
+            <ImageView
+                android:id="@+id/detailWindSpeed"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_weather_windy" />
+
+            <TextView
+                android:id="@+id/detailWindSpeedVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailWindSpeed"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailWindSpeedVal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/windSpeed"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/detailPressure"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_gauge" />
+
+            <TextView
+                android:id="@+id/detailPressureVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailPressure"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailPressureVal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/pressure"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/detailPrecipitation"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_weather_pouring" />
+
+            <TextView
+                android:id="@+id/detailPrecipitationVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailPrecipitation"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailPrecipitationVal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/precipitation"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/detailTemperature"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_thermometer" />
+
+            <TextView
+                android:id="@+id/detailTemperatureVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailTemperature"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailTemperatureVal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/temperature"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/detailStatus"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_clear_day" />
+
+            <TextView
+                android:id="@+id/detailStatusVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailStatus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17.5dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/detailHumidity"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_water_percent" />
+
+            <TextView
+                android:id="@+id/detailHumidityVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailHumidity"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailHumidityVal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/humidity"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/detailVisibility"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_eye" />
+
+            <TextView
+                android:id="@+id/detailVisibilityVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailVisibility"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailVisibilityVal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/visibility"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/detailCloudCover"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_weather_fog" />
+
+            <TextView
+                android:id="@+id/detailCloudCoverVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailCloudCover"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailCloudCoverVal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cloudCover"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/detailOzone"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_earth" />
+
+            <TextView
+                android:id="@+id/detailOzoneVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailOzone"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailOzoneVal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ozne"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</FrameLayout>
